@@ -1,0 +1,60 @@
+.wrapper{
+    margin: 2%;
+}
+table{
+   width: 100%; 
+   border-collapse: collapse;
+}
+td,th{
+    /* border-bottom: 1px solid #ddd; */
+    text-align: left;
+    padding: 8px 10px;
+}
+tr{
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(odd){
+    background-color: #f6f6f6;
+}
+tr:hover{
+    background-color: #f9f9f9;
+}
+thead tr{
+    background-color: dodgerblue !important;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    display: inline-flex;
+    width: 100%;
+    margin: 10px 0px;
+}
+div#filterDropdown {
+    /* float: left; */
+    width: 50%;
+    text-align: left;
+}
+div#searchBar {
+    /* float: right; */
+    width: 50%;
+    text-align: right;
+}
+#search {
+    padding: 5px;
+    /* border-radius: 5px; */
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+select {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    
+}
