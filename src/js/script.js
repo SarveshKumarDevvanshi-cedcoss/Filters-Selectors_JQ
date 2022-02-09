@@ -1,3 +1,4 @@
+createPageElement();
 $(document).ready(function(){
     createTable(products);
     setOptions(selectUniqueColumnValue("brand"), "brand");
@@ -93,4 +94,19 @@ function createTable(products){
   }
   name += `</table>`;
   $("#productData").html(name);
+}
+function createPageElement(){
+    var html=`<div class="wrapper">
+    <div class="header">
+        <div id="filterDropdown">
+            <select name="" id="brand"></select>
+            <select name="" id="os"></select>
+        </div>
+        <div id="searchBar">
+            <label for="search">Search:<input type="text" name="" id="search"></label>
+        </div>
+    </div>
+    <div id="productData"></div>
+</div>`;
+$("#dataTable").html(html);
 }
